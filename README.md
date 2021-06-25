@@ -8,9 +8,9 @@ See the gitlab repository running the CI/CD pipelines:
 
 <https://gitlab.com/sosiristseng/pluto-static-export-template>
 
-And the exported gitlab page:
+And the exported gitlab page at:
 
-
+<https://sosiristseng.gitlab.io/pluto-static-export-template>
 
 
 More info here:
@@ -18,27 +18,39 @@ More info here:
 
 This project is at its infancy so be careful to use the code in this repository for your own projects.
 
-## How to use the template
+## How to use this template
 
 ### 👉 Step 1
 
-Create a GitLab account, and fork this project to your own.
+Create a GitLab account, and fork this repository to your GitLab projects.
+
+![image](https://user-images.githubusercontent.com/40054455/123437682-8552b200-d602-11eb-8daa-d7aaeca3eb7e.png)
+
 
 ### 👉 Step 2
 
-Click on **Add files**, and then **Upload files**. In the next page, upload your `.jl` notebook files.
+Click on **Upload file** to upload your `.jl` notebook files and commit changes.
 
-Your notebooks will run on gitlab every time that you update the files in this repository. To check the progress, click on `CI/CD` -> `Pipelines`, you will find the _jobs_ for the last commit.
+![image](https://user-images.githubusercontent.com/40054455/123435949-b16d3380-d600-11eb-8597-30d324f608b8.png)
 
-Wait for the GitLab CI/CD to finish running your notebook.
+Your notebooks will run on gitlab every time that you add / update the files in this repository. To check the progress, click on `CI/CD` -> `Pipelines`, you will find the _jobs_ for the last commit.
+
+![image](https://user-images.githubusercontent.com/40054455/123438575-67d21800-d603-11eb-991f-84ee90b6808f.png)
+
+Wait for the GitLab CI/CD to finish running your notebook and publish the HTML files to GitLab pages. The URL is available in the `Settings` -> `Pages` of your repository.
 
 ## Update notebook files
 
-To update an existing notebook file, simply repeat Step 2 above! (You can also use **Add files** `>` **Upload files** to _update_ upload a file that already exists on the repository.)
+To update an existing notebook file, simply repeat Step 2 above! 
 
-## Alternative setup: add web pages to an existing repository
+You can also click on the file and then press **Replace** to update a file that already exists on the repository.
 
-If you already have a github repository with some pluto notebooks in it, you may want to add a web view like the one for this repository. In that case, the steps are slightly different. In this case, I assume that you are familiar with adding files to a repository. If not, follow the steps above.
+![image](https://user-images.githubusercontent.com/40054455/123435720-73700f80-d600-11eb-9c44-7b4ad699a969.png)
+
+
+## Setup in an existing repository
+
+If you already have a GitLab repository with some pluto notebooks in it, you may want to add a web view like the one for your repository. In that case, the steps are slightly different. In this case, I assume that you are familiar with managing a repository. If not, follow the steps above.
 
 ### 👉 Step 1
 
@@ -46,23 +58,11 @@ Make sure that all your Pluto notebooks can be run from a fresh Julia environmen
 
 ### 👉 Step 2
 
-From this repository, download [`.gitlab-ci.yml`](.gitlab-ci.yml)
+From this repository, download [`.gitlab-ci.yml`](.gitlab-ci.yml) and save the file in your own repository root. Commit the new file to your repository.
 
-Save the file in your own repository, in the same location: make a folder `.github` in the main directory, within that a folder `workflows`, and add the file there, with the name `ExportPluto.yaml`. Commit the new file to your repository. 
+*Note: The YAML file assumes you are using `main` as the default branch. Change `main` to your default branch name in line 28 and 41 if necessary.*
 
-*Note: The yaml file states that github should use the github notebooks in the `main` branch or `master` branch of your repository. If you changed the name of your default branch, or you want to use a different branch, change `main` in [line 5](https://github.com/JuliaPluto/static-export-template/blob/main/.github/workflows/ExportPluto.yaml#L5) in the yaml file to the name of your favourite branch.*
-
-Your notebooks will run on github every time that you update the files in this repository. To check the progress, click on ["Actions"](./actions), you will find the _workflow_ for the last commit.
-
-<img width="400" alt="Schermafbeelding 2021-01-06 om 00 45 25" src="https://user-images.githubusercontent.com/6933510/103711844-978b5600-4fb8-11eb-8b1b-1e5bdacc1c85.png">
-
-### 👉 Step 3
-
-Go to the ["Settings"](./settings) page of your repository, and in the left pane, choose the category _"Pages"_. For the "Source", choose `gh-pages`. Wait a minute for everything to initialize, and the URL to your web page will be shown! 
-
-<img width="400" alt="Schermafbeelding 2021-01-06 om 00 43 00" src="https://user-images.githubusercontent.com/6933510/103711695-43807180-4fb8-11eb-9ba8-a96a70612177.png">
-
-Don't worry if it doesn't work immediately! It can take a while for the web page to be ready, even after your settings page says it's done. (Github pages says 20 minutes, but it can take even longer.)
+The rest is the same as `👉 Step 2` in the previous section.
 
 
 ## 💡Tips
@@ -105,8 +105,8 @@ end
 
 **Important to note:**
 
--   Place the Pkg commands and the imports in the same cell.
--   You can use the same setup when running your notebook locally. Julia will re-use existing package installations, so this will only download and install packages the first time.
+- Place the Pkg commands and the imports in the same cell.
+- You can use the same setup when running your notebook locally. Julia will re-use existing package installations, so this will only download and install packages the first time.
 
 _In the future, Pluto will automate this process for you!_ 🙈
 
@@ -114,5 +114,5 @@ _In the future, Pluto will automate this process for you!_ 🙈
 
 If you go to the (GitLab Pages) URL of repository, you will see a small index of the notebooks in this repository. You can customize this page, two options are:
 
--   Create your own `index.html`, it will be used as the homepage.
--   Rename one of your notebooks to `index.jl`, and it will be the default notebook!
+- Create your own `index.html`, it will be used as the homepage.
+- Rename one of your notebooks to `index.jl`, and it will be the default notebook!
