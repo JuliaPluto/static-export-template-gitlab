@@ -112,7 +112,7 @@ _In the future, Pluto will automate this process for you!_ 🙈
 
 ### Homepage
 
-If you go to the (GitLab Pages) URL of repository, you will see a small index of the notebooks in this repository. You can customize this page, two options are:
+If you go to the website URL of this repository, you will see a small index of the notebooks in this repository if you don't have a `index.html`. You can customize this page, two options are:
 
 - Create your own `index.html`, it will be used as the homepage.
 - Rename one of your notebooks to `index.jl`, and it will be the default notebook!
