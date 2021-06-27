@@ -1,4 +1,4 @@
-# Staticaly exporting Pluto notebooks in GitLab
+# Statically exporting Pluto notebooks in GitLab
 
 This is a demo repository containing one Pluto notebook that is **automatically converted to HTML** by GitLab CI/CD, and published to gitlab pages! 🌝
 
