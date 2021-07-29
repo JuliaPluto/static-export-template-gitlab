@@ -67,6 +67,10 @@ The rest is the same as `👉 Step 2` in the previous section.
 
 ## 💡Tips
 
+### Environment for the notebooks
+
+Please see [🎁 Package management](https://github.com/fonsp/Pluto.jl/wiki/🎁-Package-management) in Pluto notebooks. (Requires Pluto 0.15+)
+
 ### Homepage
 
 If you go to the website URL of this repository, you will see a small index of the notebooks in this repository if you don't have a `index.html`. You can customize this page, two options are:
