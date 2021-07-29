@@ -10,6 +10,7 @@ before_script:
 - julia -e 'using Pkg;
             Pkg.activate(mktempdir());
             Pkg.add([
+              Pkg.PackageSpec(name="Pluto"),
               Pkg.PackageSpec(name="PlutoSliderServer", version="0.2"),
             ]);
 
