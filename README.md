@@ -2,15 +2,11 @@
 
 This is a demo repository containing one Pluto notebook that is **automatically converted to HTML** by GitLab CI/CD, and published to gitlab pages! 🌝
 
-This project is forked from [static-export-template](https://github.com/JuliaPluto/static-export-template).
+This project is forked from [static-export-template](https://github.com/JuliaPluto/static-export-template), which is using GitHub pages.
 
-See the gitlab repository running the CI/CD pipelines:
+See the gitlab repository running the CI/CD pipelines: <https://gitlab.com/NTUMito/static-export-template-gitlab/-/pipelines/>
 
-<https://gitlab.com/sosiristseng/pluto-static-export-template>
-
-And the exported gitlab page at:
-
-<https://sosiristseng.gitlab.io/pluto-static-export-template>
+And the exported gitlab pages is on: <https://ntumito.gitlab.io/static-export-template-gitlab/>
 
 
 More info here:
