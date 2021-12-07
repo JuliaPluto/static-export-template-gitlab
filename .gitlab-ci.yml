@@ -1,4 +1,4 @@
-image: julia:1.6
+image: julia:1.7
 
 # Cache notebooks in between jobs
 cache:
