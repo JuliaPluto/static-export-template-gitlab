@@ -6,8 +6,10 @@ cache:
   paths:
     - pluto_state_cache/
 
+# Install PlutoSlider Server
 before_script:
-- julia -e 'using Pkg;
+- |
+  julia -e 'using Pkg;
             Pkg.activate(mktempdir());
             Pkg.add([
               Pkg.PackageSpec(name="PlutoSliderServer", version="0.3.2-0.3"),
