@@ -10,14 +10,14 @@ before_script:
 - julia -e 'using Pkg;
             Pkg.activate(mktempdir());
             Pkg.add([
-              Pkg.PackageSpec(name="Pluto"),
-              Pkg.PackageSpec(name="PlutoSliderServer", version="0.2"),
+              Pkg.PackageSpec(name="PlutoSliderServer", version="0.3.2-0.3"),
             ]);
-
             import PlutoSliderServer;
-
-            PlutoSliderServer.github_action(;
+            PlutoSliderServer.github_action(".";
               Export_cache_dir="pluto_state_cache",
+              Export_baked_notebookfile=false,
+              Export_baked_state=false,
+              # more parameters can go here
             );'
 
 
