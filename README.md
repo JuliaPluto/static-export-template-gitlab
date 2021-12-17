@@ -1,12 +1,12 @@
 # Statically exporting Pluto notebooks in GitLab
 
-This is a demo repository containing one Pluto notebook that is **automatically converted to HTML** by GitLab CI/CD, and published to gitlab pages! 🌝
+This is a demo repository containing one Pluto notebook that is **automatically converted to HTML** by GitLab CI/CD, and published to GitLab pages! 🌝
 
-This project is forked from [static-export-template](https://github.com/JuliaPluto/static-export-template), which is using GitHub pages.
+This project is forked from [static-export-template](https://github.com/JuliaPluto/static-export-template).
 
-See the gitlab repository running the CI/CD pipelines: <https://gitlab.com/NTUMito/static-export-template-gitlab/-/pipelines/>
+See the gitlab repository running the [CI/CD pipelines](https://gitlab.com/sosiristseng/static-export-template-gitlab/-/pipelines).
 
-And the exported gitlab pages is on: <https://ntumito.gitlab.io/static-export-template-gitlab/>
+And the exported gitlab pages is [here](https://gitlab.com/sosiristseng/static-export-template-gitlab/pages)
 
 
 More info here:
@@ -54,7 +54,7 @@ Make sure that all your Pluto notebooks can be run from a fresh Julia environmen
 
 ### 👉 Step 2
 
-From this repository, download [`.gitlab-ci.yml`](.gitlab-ci.yml) and save the file in your own repository root. Commit the new file to your repository.
+From this repository, download [`.gitlab-ci.yml`](.gitlab-ci.yml) and save the file in your own repository root. Commit it to your repository.
 
 *Note: The YAML file assumes you are using `main` as the default branch. Change `main` to your default branch name in line 28 and 41 if necessary.*
 
