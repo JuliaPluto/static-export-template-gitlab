@@ -1,6 +1,6 @@
 # Statically exporting Pluto notebooks in GitLab
 
-This is a demo repository containing one Pluto notebook that is **automatically converted to HTML** by GitLab CI/CD, and published to GitLab pages! 🌝
+This is a demo repository containing one [Pluto](https://github.com/fonsp/Pluto.jl) notebook that is **automatically converted to HTML** by GitLab CI/CD, and published to GitLab pages! 🌝
 
 This project is forked from [static-export-template](https://github.com/JuliaPluto/static-export-template).
 
@@ -18,10 +18,9 @@ This project is at its infancy so be careful to use the code in this repository 
 
 ### 👉 Step 1
 
-Create a GitLab account, and fork this repository to your GitLab projects.
+Create a GitLab account, and import [this repository](https://github.com/JuliaPluto/static-export-template-gitlab) or [the GitLab one](https://gitlab.com/sosiristseng/static-export-template-gitlab) to your GitLab projects.
 
 ![image](https://user-images.githubusercontent.com/40054455/123437682-8552b200-d602-11eb-8daa-d7aaeca3eb7e.png)
-
 
 ### 👉 Step 2
 
