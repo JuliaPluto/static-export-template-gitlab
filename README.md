@@ -1,24 +1,19 @@
 # Statically exporting Pluto notebooks in GitLab
 
-This is a demo repository containing one [Pluto](https://github.com/fonsp/Pluto.jl) notebook that is **automatically converted to HTML** by GitLab CI/CD, and published to GitLab pages! 🌝
+This is a demo repository containing one [Pluto](https://github.com/fonsp/Pluto.jl) notebook that is **automatically converted to HTML** by GitLab CI/CD pipelines, and published to GitLab pages! 🌝
 
-This project is forked from [static-export-template](https://github.com/JuliaPluto/static-export-template).
-
-See the gitlab repository running the [CI/CD pipelines](https://gitlab.com/sosiristseng/static-export-template-gitlab/-/pipelines).
-
-And the exported gitlab pages is [here](https://gitlab.com/sosiristseng/static-export-template-gitlab/pages)
-
+This project is forked from [static-export-template](https://github.com/JuliaPluto/static-export-template) and runs GitLab [CI/CD pipelines](https://gitlab.com/sosiristseng/static-export-template-gitlab/-/pipelines) in the [mirroring GitLAab repository](https://gitlab.com/sosiristseng/static-export-template-gitlab) to export [gitlab pages](https://sosiristseng.gitlab.io/static-export-template-gitlab).
 
 More info here:
 <https://www.notion.so/Interactive-web-articles-bf3af6de77854660807e674148c27b1f#1a997e538e0d48e0bf54d2d5f29dfc2b>
 
 This project is at its infancy so be careful to use the code in this repository for your own projects.
 
-## How to use this template
+## Cerating a new project using this template
 
 ### 👉 Step 1
 
-Create a GitLab account, and import [this repository](https://github.com/JuliaPluto/static-export-template-gitlab) or [the GitLab one](https://gitlab.com/sosiristseng/static-export-template-gitlab) to your GitLab projects.
+Register a GitLab account if you don't have one. Add a new GitLab project by importing this repository: `https://github.com/JuliaPluto/static-export-template-gitlab.git` or the GitLab mirror `https://gitlab.com/sosiristseng/static-export-template-gitlab.git`.
 
 ![image](https://user-images.githubusercontent.com/40054455/123437682-8552b200-d602-11eb-8daa-d7aaeca3eb7e.png)
 
