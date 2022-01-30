@@ -1,15 +1,19 @@
 image: julia:1.7
 
+variables:
+  JULIA_DEPOT_PATH: "$CI_PROJECT_DIR/.julia"
+
 # Cache notebooks in between jobs
 cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
     - pluto_state_cache/
+    - .julia/
 
 # Install PlutoSlider Server
 before_script:
 - |
-  julia -e 'using Pkg;
+  julia --color=yes --threads=auto -e 'using Pkg;
             Pkg.activate(mktempdir());
             Pkg.add([
               Pkg.PackageSpec(name="PlutoSliderServer", version="0.3.2-0.3"),
