@@ -5,12 +5,14 @@ variables:
 
 # Cache notebooks in between jobs
 cache:
-  key: ${CI_COMMIT_REF_SLUG}
+  key: ${CI_COMMIT_REF_SLUG}-julia-1.7
   paths:
     - pluto_state_cache/
-    - .julia/
+    - .julia/artifacts/
+    - .julia/packages/
+    - .julia/compiled/
 
-# Install PlutoSlider Server
+# Install PlutoSlider Server and run the notebooks
 before_script:
 - |
   julia --color=yes --threads=auto -e 'using Pkg;
