@@ -1,4 +1,4 @@
-image: julia:1.7
+image: julia:1.8
 
 variables:
   JULIA_DEPOT_PATH: "$CI_PROJECT_DIR/.julia"
