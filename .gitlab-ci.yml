@@ -5,7 +5,7 @@ variables:
 
 # Cache notebooks and Julia packages in between jobs
 cache:
-  key: ${CI_COMMIT_REF_SLUG}-julia-1.7
+  key: ${CI_COMMIT_REF_SLUG}-julia-1.8
   paths:
     - pluto_state_cache/
     - .julia/artifacts/
