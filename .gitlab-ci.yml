@@ -1,11 +1,11 @@
-image: julia:1.8
+image: julia:1.10
 
 variables:
   JULIA_DEPOT_PATH: "$CI_PROJECT_DIR/.julia"
 
 # Cache notebooks and Julia packages in between jobs
 cache:
-  key: ${CI_COMMIT_REF_SLUG}-julia-1.8
+  key: ${CI_COMMIT_REF_SLUG}-julia-1.10
   paths:
     - pluto_state_cache/
     - .julia/artifacts/
@@ -18,7 +18,7 @@ before_script:
   julia --color=yes --threads=auto -e 'using Pkg;
             Pkg.activate(mktempdir());
             Pkg.add([
-              Pkg.PackageSpec(name="PlutoSliderServer", version="0.3.2-0.3"),
+              Pkg.PackageSpec(name="PlutoSliderServer", version="1"),
             ]);
             import PlutoSliderServer;
             PlutoSliderServer.export_directory(".";
